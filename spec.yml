@@ -1,29 +1,5 @@
-docker:
-  imagename: "calculatorapp"
-  tagname: "v5.0"
-webform:
-  ip: "20.80.200.153"
-  port: "8000"
-jfrog:
-  url: "https://sixartifact.jfrog.io/artifactory"
-  credentials: "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJ5WGxfLWhDdVQ5NllRNTZmN0ppNVFZeEQtYm5aYnkydlRzMkFiaTZrbjJVIn0.eyJleHQiOiJ7XCJyZXZvY2FibGVcIjpcInRydWVcIn0iLCJzdWIiOiJqZmFjQDAxZmJrbjBodjM3NWVrMXNyN3ljMzcwNDVuXC91c2Vyc1wvc2hhc2hpZGhhciIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnNcL3VzZXIiLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAwMCIsImV4cCI6MTY3MzA3ODIwOSwiaWF0IjoxNjQxNTQyMjA5LCJqdGkiOiI3ZGU1OTE5Mi04NzZlLTQzOTEtOTBkZS1mMjkxOTljZDE2ZWQifQ.akV0SJ4IbgmvFBgWRp2gE2L_qnQ2y6m9qF1RIxQNVKbrfbuqHs_wtCMU6DLojFn7R0nqx8KH4u0ORUigV6YCi_-gb8-I3v-cDjFJOiCy1oBocjR-7MNQ-ShmP1NP2RHV7hixfzPWONFMWd3oCsqWu8dwc1z4o0rraVsbYT3xrD4tJx3tu4HAYOWAstLZlaEZclGBD45_MAgNneJZ4gSzVGhgDCzs_l-0oeiy6Je0EPiK1vYhRXELygMDFzCdJuMt-oxOmqH2hQc9m17eancT2a6bjKjqyMAH2kMwNgNxM27hQIr33-Y58iIt0awh2q-vTrjKXxLiDlZ9lzvH2F92-g"
-  credentialsBackup: "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJ5WGxfLWhDdVQ5NllRNTZmN0ppNVFZeEQtYm5aYnkydlRzMkFiaTZrbjJVIn0.eyJleHQiOiJ7XCJyZXZvY2FibGVcIjpcInRydWVcIn0iLCJzdWIiOiJqZmFjQDAxZmJrbjBodjM3NWVrMXNyN3ljMzcwNDVuXC91c2Vyc1wvNTk0NDVAaGV4YXdhcmUuY29tIiwic2NwIjoiYXBwbGllZC1wZXJtaXNzaW9uc1wvYWRtaW4iLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAwMCIsImV4cCI6MTY3MzAxMDY2OSwiaWF0IjoxNjQxNDc0NjY5LCJqdGkiOiI0ZWY3MWU5MS0zYWRjLTRmMzUtODc3OS0xODFiZWNmODJhNDkifQ.ZTzNkoFe-I1dsWFShyv8evgwJAr7eUOvNxOXGB0gcdFqND6YRCg_IM5muopp33AUhijcAEvRFRL2Wgm3Glgzgyercaa4f3rtSDFJT_MGbDGvZWZvK64mHkf0MxaOR4ElzpVUHcrZVQvZTtnK5nEAM9JGnruu4BQiyVyYAMdC1AauKq6VCPu6GhqIjRd2BAmv0W1-5UJshzdhdBktFwO69B9JY8RoPVqvIdXexxFWpl6ZedghSaEmgwjsfjQxTZANrELQsoEbrvr3Lt1L-n9VEpvLhY-2V3RzApo0WkjiwoXxJeH_u5WCjDSizmF3ls8UeCgM_y0dkPzLAVPg8ggd8w"
-  dockerregistry: "default-docker-local"
-  username: "shashidhar"
-  email: "59445@hexaware.com"
+technology: maven
 sonarqube:
-  isneeded: true
-  url: "https://nxgendevops-sonarqube.eastus.cloudapp.azure.com"
-  token: "a45e06afa1a96eccd0a8a4e3aacce7cafa0b6908"
+  enabled: true
 spectralops:
-  isneeded: true
-  dsn: "https://spk-6e288232b0eb42a0911f2eda2b1a20eb@get.spectralops.io/"
-dependencycheck:
-  isneeded: true
-deployment:
-  isneeded: true
-  environment: "prod"
-  deploymentfile: "kubernetes.yaml"
-  endpoint: "8080/calculator"
-  imagetodeploy: "sixartifact.jfrog.io/default-docker-local/calculatorapp:v3.0"
-  imagepullsecret: "calculatorapp1"
+  enabled: true
