@@ -6,6 +6,7 @@ spectralops:
 deployment:
   enabled: true
   type: kubernetes
+  credential: test-kubeconfig
   target: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
   additionalData:
     deploymentName: sample-maven-app
