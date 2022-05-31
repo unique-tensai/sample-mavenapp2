@@ -11,3 +11,6 @@ deployment:
   additionalData:
     deploymentName: sample-maven-app
     namespace: sample-maven-app
+    serviceEnabled: true
+    serviceType: LoadBalancer
+    servicePort: 8080
