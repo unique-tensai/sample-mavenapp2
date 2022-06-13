@@ -1,7 +1,6 @@
 # A Java Maven Calculator Web App
 A Java calculator web app, build by Maven, CI/CD by Jenkins.
 
-![image](realworld-pipeline-flow.png)
 
 ## 1. Manualy Build, Test, and Deploy By Maven
 
@@ -136,9 +135,6 @@ If you want to see the test plan, you need install Jmeter, then start Jmeter GUI
 $ cd ~/apache/jmeter/bin
 $ ./jmeter 
 ```
-![image](jmeter-test-plan-02.png)
-
-![image](jmeter-test-plan-02.png)
 
 Don't use GUI mode for load testing !, only for Test creation and Test debugging.For load testing, use CLI Mode:
 ```console
@@ -154,14 +150,12 @@ summary =    200 in 00:00:10 =   20.8/s Avg:     1 Min:     0 Max:    52 Err:   
 Tidying up ...    @ Sat Mar 16 22:08:01 CST 2019 (1552745281987)
 ```
 Open performance test result csv file:
-![image](jmeter-test-result-01.png)
 
 ### 1.9 Build Project Site
 ```console
 $ mvn site
 ```
 open java-maven-calculator-web-app/target/site/index.html
-![image](mvn-site-01.png)
 
 ### 1.10 Deploy Artifactory to Nexus (Optional)
 ```console
@@ -172,7 +166,6 @@ Visit http://localhost:8081/ with admin/admin123.
 
 Search calculator, click Browse SNAPSHOT(s)
 
-![image](nexus-browse-01.png)
 
 ### 1.11 Release X.0 version (Optional)
 Before Release a version, you must commit and push all your code to remote repo.
@@ -210,18 +203,12 @@ Project name: **MyJavaMavenCalculateWebApp**
 
 Execute every mvn goal one by one defined in Build Section Step: "Invoke top-level Maven targets"
 
-![image](jenkins-mvn-01.png)
 
-![image](jenkins-mvn-02.png)
 
 ### 2.2 Create and Configure a Pipeline Jenkins Project
 Project name: **MyJavaMavenCalculateWebApp-Pipeline**
 
 Execute the Jenkins Pipeline Script File: Jenkinsfile
-
-![image](jenkins-pipeline-01.png)
-
-![image](jenkins-pipeline-02.png)
 
 ### 2.3 Create and Configure a Freestyle Jenkins Project, using Publish Over FTP plugin
 Project name: **MyJavaMavenCalculateWebApp-AzureAppService-FTP**
