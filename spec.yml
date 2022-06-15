@@ -5,8 +5,12 @@ spectralops:
   enabled: true
 deployment:
   enabled: true
-  type: argocd
-  credential: test-argocd-b64-web
+  type: kubernetes
+  credential: test-kubeconfig
   target: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
   additionalData:
-    kubeConfig: test-kubeconfig
+    deploymentName: sample-maven-app
+    namespace: sample-maven-app
+    serviceEnabled: true
+    serviceType: LoadBalancer
+    servicePort: 8080
