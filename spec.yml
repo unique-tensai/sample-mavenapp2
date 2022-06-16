@@ -11,3 +11,6 @@ deployment:
   additionalData:
     kubeConfig: test-kubeconfig
     namespace: sample-maven-argocd
+    serviceEnabled: true
+    serviceType: LoadBalancer
+    servicePort: 8080
