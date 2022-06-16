@@ -6,7 +6,7 @@ spectralops:
 deployment:
   enabled: true
   type: argocd
-  credential: test-argocd
+  credential: test-argocd-b64-web
   target: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
   additionalData:
     kubeConfig: test-kubeconfig
